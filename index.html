@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title> Лабораторная работа 4</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+    <header class="text-white bg-primary">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <img src="https://avatars.mds.yandex.net/i?id=a2c747a3ccfa4d287e074cb7c474dc24c97eb28f-17641277-images-thumbs&n=13" 
+                         alt="Логотип" 
+                         style="width: 100px;">
+                </div>
+                <div class="col">
+                    <h1>Лабораторная работа 4</h1>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container">
+                <ul class="navbar-nav flex-column flex-md-row">
+                    <li class="nav-item me-md-4 mb-2 mb-md-0">
+                        <a class="nav-link text-white fw-bold" href="#center">Список ссылок</a>
+                    </li>
+                    <li class="nav-item me-md-4 mb-2 mb-md-0">
+                        <a class="nav-link text-white fw-bold" href="#tablic">Таблица</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="#forma">Форма</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="h4 text-primary mb-4">Список гиперссылок</h2>
+                    <div class="list-group">
+                        <a href="http://www.kubsu.ru" class="list-group-item list-group-item-action" title="Официальный сайт КубГУ">
+                            Ссылка на сайт КубГУ первая
+                        </a>
+                        <a href="https://www.kubsu.ru" class="list-group-item list-group-item-action" title="Официальный сайт КубГУ">
+                            Ссылка на сайт КубГУ вторая
+                        </a>
+                        <a href="https://www.kubsu.ru" class="list-group-item list-group-item-action">
+                            <img src="https://avatars.mds.yandex.net/i?id=82b93ff4ec4fc1a0b1e3df7bfdd8a1293bd8eb98-16441608-images-thumbs&n=13" 
+                                 alt="цветочек" 
+                                 class="img-fluid" 
+                                 style="max-width: 200px;">
+                        </a>
+                        <a href="inside/inside_first.html" class="list-group-item list-group-item-action">
+                            Сокращенная ссылка на внутреннюю страницу
+                        </a>
+                        <a href="index.html" class="list-group-item list-group-item-action">
+                            Сокращенная ссылка на главную страницу
+                        </a>
+                        <a href="#element" class="list-group-item list-group-item-action">
+                            Ссылка на фрагмент страницы
+                        </a>
+                        <a href="index.html?user=123&profile=234&cat=0" class="list-group-item list-group-item-action">
+                            Ссылка с 3 параметрами в URL
+                        </a>
+                        <a href="index.html?id=123" class="list-group-item list-group-item-action">
+                            Ссылка с параметром id в URL
+                        </a>
+                        <a href="./incatalog.html" class="list-group-item list-group-item-action">
+                            Ссылка на страницу в текущем каталоге
+                        </a>
+                        <a href="./about/about.html" class="list-group-item list-group-item-action">
+                            Ссылка на страницу в каталоге about
+                        </a>
+                        <a href="../1step.html" class="list-group-item list-group-item-action">
+                            Ссылка на страницу в каталоге уровнем выше
+                        </a>
+                        <a href="../../2step.html" class="list-group-item list-group-item-action">
+                            Ссылка на страницу в каталоге двумя уровнями выше
+                        </a>
+                        <div class="list-group-item">
+                            Невероятно осмысленный текст 
+                            <a href="https://www.kubsu.ru">со ссылкой</a>
+                        </div>
+                        <a href="https://www.kubsu.ru/lib/images/Group3288.png" class="list-group-item list-group-item-action">
+                            Ссылка на фрагмент стороннего сайта
+                        </a>
+                        <div class="list-group-item">
+                            <img src="https://i.ytimg.com/vi/tqh_z6fugJs/hq720.jpg" 
+                                 alt="Карта изображения" 
+                                 class="image-map rounded"
+                                 usemap="#cat">
+                            <map name="cat">
+                                <area shape="rect" coords="0,0,80,80" href="http://www.kubsu.ru" alt="Прямоугольная область">
+                                <area shape="circle" coords="160,100,40" href="http://www.kubsu.ru" alt="Круглая область">
+                            </map>
+                            <div class="mt-2">Ссылки из прямоугольных и круглых областей картинки</div>
+                        </div>
+                        <a href="" class="list-group-item list-group-item-action">
+                            Ссылка с пустым href
+                        </a>
+                        <span class="list-group-item" title="тут ничего нет">
+                            Ссылка без href
+                        </span>
+                        <a href="index.html" rel="nofollow" class="list-group-item list-group-item-action">
+                            Ссылка, по которой запрещен переход поисковикам
+                        </a>
+                        <a href="index.html" class="list-group-item list-group-item-action">
+                            Ссылка, запрещенная для индексации поисковиками
+                        </a>
+                        <div class="list-group-item">
+                            <ol class="mb-0">
+                                <li class="mb-1">
+                                    <a href="https://www.kubsu.ru" title="Первая">ссылка</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="https://www.kubsu.ru" class="text-decoration-none" title="Вторая">ссылка</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.kubsu.ru" class="text-decoration-none" title="Третья">ссылка</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tablic" class="mt-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h4 class=" text-primary mb-4">Таблица</h4>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Первый</th>
+                                    <th>Второй</th>
+                                    <th>Третий</th>
+                                    <th>Четвертый</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                </tr>
+                                <tr>
+                                    <td>ф</td>
+                                    <td colspan="2">ф</td>
+                                </tr>
+                                <tr>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                </tr>
+                                <tr>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                </tr>
+                                <tr>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                </tr>
+                                <tr>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                </tr>
+                                <tr>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                    <td>ф</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="forma">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Форма</h5>
+                        </div>
+                        <div class="card-body">
+                            <form action="" method="POST">
+                                <div class="mb-3">
+                                    <label for="field-name" class="form-label">Ваше ФИО</label>
+                                    <input type="text" 
+                                           class="form-control" 
+                                           id="field-name" 
+                                           name="field-name" 
+                                           placeholder="Введите ФИО">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="field-tel" class="form-label">Телефон</label>
+                                    <input type="tel" 
+                                           class="form-control" 
+                                           id="field-tel" 
+                                           name="field-tel" 
+                                           placeholder="Введите номер телефона"
+                                           pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                                    <div class="form-text">Формат: X-XXX-XXX-XX-XX</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="field-email" class="form-label">E-mail</label>
+                                    <input type="email" 
+                                           class="form-control" 
+                                           id="field-email" 
+                                           name="field-email" 
+                                           placeholder="Введите email" 
+                                           required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="field-date" class="form-label">Дата рождения</label>
+                                    <input type="date" 
+                                           class="form-control" 
+                                           id="field-date" 
+                                           name="field-date">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Пол</label>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" 
+                                                   type="radio" 
+                                                   name="radio-group-1" 
+                                                   id="male" 
+                                                   value="Значение1">
+                                            <label class="form-check-label" for="male">Муж</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" 
+                                                   type="radio" 
+                                                   name="radio-group-1" 
+                                                   id="female" 
+                                                   value="Значение2">
+                                            <label class="form-check-label" for="female">Жен</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="programming-languages" class="form-label">
+                                        Любимый язык программирования:
+                                    </label>
+                                    <select class="form-select" 
+                                            id="programming-languages" 
+                                            name="listbox[]" 
+                                            multiple 
+                                            size="6">
+                                        <option value="Значение1" selected>Pascal</option>
+                                        <option value="Значение2" selected>C</option>
+                                        <option value="Значение3" selected>C++</option>
+                                        <option value="Значение4" selected>JavaScript</option>
+                                        <option value="Значение5" selected>PHP</option>
+                                        <option value="Значение6" selected>Python</option>
+                                        <option value="Значение7" selected>Java</option>
+                                        <option value="Значение8" selected>Haskel</option>
+                                        <option value="Значение9" selected>Clojure</option>
+                                        <option value="Значение10" selected>Prolog</option>
+                                        <option value="Значение11" selected>Scala</option>
+                                    </select>
+                                    <div class="form-text">Для выбора нескольких вариантов используйте Ctrl+Click</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="biography" class="form-label">Биография:</label>
+                                    <textarea class="form-control" 
+                                              id="biography" 
+                                              name="field-name-2" 
+                                              rows="4">Расскажите вашу историю</textarea>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" 
+                                           class="form-check-input" 
+                                           id="check-1" 
+                                           name="check-1" 
+                                           checked>
+                                    <label class="form-check-label" for="check-1">
+                                        С контрактом ознакомлен(а)
+                                    </label>
+                                </div>
+
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="submit" class="btn btn-primary px-4">Сохранить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white bg-primary py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 id="element" class="h5 mb-0">(c) Семерников Никита</h2>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
